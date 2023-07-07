@@ -1,0 +1,17 @@
+Write Replica Canada <-> Write Replica Australia
+
+Read Replica <- Master
+Write Replica -> Master
+
+Vans -- Old Skool
+
+be: Backend
+fe: Frontend
+
+be -> fe
+
+Database -> S3: backup
+Database -> S3
+Database -> S3: backup
+
+High Mem Instance -> EC2 <- High CPU Instance: Hosted By

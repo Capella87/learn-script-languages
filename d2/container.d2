@@ -1,0 +1,21 @@
+server
+
+server.process
+
+im a parent.im a child
+
+
+apartment.Bedroom.Bathroom ->office.Spare Room.Bathroom: Portal
+
+clouds: {
+  aws: {
+    label: Amazon Web Services
+    load_balancer -> api
+    api -> db
+  }
+  gcloud: Google Cloud {
+    auth -> db
+  }
+
+  gcloud -> aws
+}
